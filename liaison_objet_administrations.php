@@ -94,5 +94,8 @@ function selection2liaison() {
 	// Renommer la table de l'ancien plugin
 	sql_alter("TABLE `spip_selection_objets` RENAME  `spip_liaison_objets`");
 	//Modifier l'ancienne table
-	sql_alter("TABLE `spip_liaison_objets` CHANGE COLUMN `id_selection_objet` `id_liaison_objet` bigint(21)");
+	sql_alter("TABLE `spip_liaison_objets` CHANGE COLUMN `id_selection_objet` `id_liaison_objet` bigint(21) NOT NULL AUTO_INCREMENT");
+
+	// ajouter autoincroment
+	//sql_alter("TABLE `spip_liaison_objets` MODIFY `id_liaison_objet` bigint(21) NOT NULL AUTO_INCREMENT");
 }
