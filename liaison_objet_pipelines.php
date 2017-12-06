@@ -14,7 +14,7 @@ function liaison_objet_affiche_gauche($flux) {
 
 	$args = $flux['args'];
 
-	$objets_liaison = lire_config('liaison_objet/liaison_rubrique_objet', array());
+	$objets_liaison = lire_config('liaison_objet/objets_liaison', array());
 
 	if (in_array($exec, $objets_liaison)) {
 		$e = trouver_objet_exec($exec);
