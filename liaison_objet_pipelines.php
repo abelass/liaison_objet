@@ -4,7 +4,7 @@ if (!defined("_ECRIRE_INC_VERSION"))
 	return;
 
 function liaison_objet_header_prive($flux) {
-	$flux .= '<link rel="stylesheet" href="' . find_in_path('css/lo_admin.css').' type="text/css" media="all" />';
+	$flux .= '<link rel="stylesheet" href="' . _DIR_PLUGIN_LIAISON_OBJET . 'css/lo_admin.css" type="text/css" media="all" />';
 	return $flux;
 }
 
