@@ -96,6 +96,4 @@ function selection2liaison() {
 	//Modifier l'ancienne table
 	sql_alter("TABLE `spip_liaison_objets` CHANGE COLUMN `id_selection_objet` `id_liaison_objet` bigint(21) NOT NULL AUTO_INCREMENT");
 
-	// ajouter autoincroment
-	//sql_alter("TABLE `spip_liaison_objets` MODIFY `id_liaison_objet` bigint(21) NOT NULL AUTO_INCREMENT");
 }
