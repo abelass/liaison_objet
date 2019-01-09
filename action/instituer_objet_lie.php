@@ -28,7 +28,7 @@ function action_instituer_objet_lie_dist($arg = null) {
 	}
 
 	// si l'objet n'est pas définit par langue on l'enregistre pour chaque langue du site
-	if (count($langue) > 1) {
+	if (is_array($langue) AND count($langue) > 1) {
 
 		foreach ($langue as $key => $l) {
 
