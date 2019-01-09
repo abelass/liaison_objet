@@ -6,7 +6,7 @@
  * @copyright  2012 - 2019
  * @author     Rainer Müller
  * @licence    GNU/GPL
- * @package    SPIP\Immeubles\Action
+ * @package    SPIP\Liaison_objets\Action
  */
 
 if (!defined("_ECRIRE_INC_VERSION"))
