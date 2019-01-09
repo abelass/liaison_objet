@@ -4,7 +4,6 @@ if (!defined('_ECRIRE_INC_VERSION'))
 	return;
 
 /*Fournit un tableau avec id_objet=>donnees_objet*/
-
 function tableau_recherche_objet($objet, $exclus, $lang = '') {
 	include_spip('inc/pipelines_ecrire');
 	//Les tables non conforme, faudrait inclure une pipeline
@@ -67,7 +66,7 @@ function tableau_recherche_objet($objet, $exclus, $lang = '') {
 			}
 			if (!isset($exclus[$r[$id_table_objet] . '-' . $objet])) {
 				$data[] = array(
-					'label' => $r[titre] . ' (' . $traduction_nom_objet . ')' . $date,
+					'label' => $r['titre'] . ' (' . $traduction_nom_objet . ')' . $date,
 					'value' => $r[$id_table_objet] . '-' . $objet
 				);
 			}
