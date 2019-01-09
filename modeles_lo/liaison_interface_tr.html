@@ -32,7 +32,7 @@
 <td class="type_lien">[(#TYPE_LIEN|nom_type{#OBJET_DEST})]</td>
 <td class="date">#SET{date,#DATE|affdate}
 [(#OBJET|=={evenement}|oui)
-	#SET{date,#DATE_DEBUT| agenda_affdate_debut_fin{#DATE_FIN,#HORAIRE}}
+	#SET{date,#DATE_DEBUT|appliquer_filtre{agenda_affdate_debut_fin,#DATE_FIN,#HORAIRE}}
 ]
 [(#GET{date})]
 </td>
