@@ -1,4 +1,13 @@
 <?php
+/**
+ * Utilisations de pipelines par Liaison_objets
+ *
+ * @plugin     Liaison_objets
+ * @copyright  2012 - 2019
+ * @author     Rainer Müller
+ * @licence    GNU/GPL
+ * @package    SPIP\Liaison_objets\Pipelines
+ */
 
 if (!defined("_ECRIRE_INC_VERSION"))
 	return;
@@ -194,4 +203,4 @@ function types_liaisons2array($type) {
 
 	return $tableau;
 }
-?>
+
